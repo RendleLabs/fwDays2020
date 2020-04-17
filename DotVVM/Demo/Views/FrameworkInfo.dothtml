@@ -1,0 +1,16 @@
+﻿@viewModel Demo.ViewModels.FrameworkInfoViewModel, Demo
+@masterPage Views/Site.dotmaster
+
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <h1>Framework Info</h1>
+    
+    <h2>{{value: FrameworkName}}</h2>
+    
+    <ul>
+        <li>Version: {{value: FrameworkVersion}}</li>
+        <li>Year: {{value: FrameworkYear}}</li>
+    </ul>
+
+</dot:Content>
+
