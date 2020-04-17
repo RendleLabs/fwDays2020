@@ -294,6 +294,7 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\DefaultViewModel.cs" />
     <Compile Include="ViewModels\FrameworkInfoViewModel.cs" />
     <Compile Include="ViewModels\SiteViewModel.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
@@ -313,6 +314,7 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Views\Site.dotmaster" />
     <Content Include="Views\FrameworkInfo.dothtml" />
+    <Content Include="Views\Default.dothtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

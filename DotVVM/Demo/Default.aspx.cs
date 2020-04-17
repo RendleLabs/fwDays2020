@@ -19,6 +19,7 @@ namespace Demo
         {
             yield return new Framework("windows-forms", "1.0", "Windows Forms");
             yield return new Framework("web-forms", "1.0", "ASP.NET Web Forms");
+            yield return new Framework("wpf", "3.0", "Windows Presentation Foundation");
         }
     }
 }
