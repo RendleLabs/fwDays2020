@@ -5,11 +5,18 @@
 
     <h1>.NET Frameworks</h1>
     
-    <dot:GridView DataSource="{value: Data}" class="table table-bordered">
-        <dot:GridViewTextColumn ValueBinding="{value: Version}" HeaderText="Version" AllowSorting="true" />
-        <dot:GridViewTemplateColumn HeaderText="Name" AllowSorting="true" SortExpression="Name">
+    <dot:GridView DataSource="{value: Data}"
+                  class="table table-bordered">
+        <dot:GridViewTextColumn ValueBinding="{value: Version}"
+                                HeaderText="Version"
+                                AllowSorting="true" />
+        <dot:GridViewTemplateColumn HeaderText="Name"
+                                    AllowSorting="true"
+                                    SortExpression="Name">
             <ContentTemplate>
-                <dot:RouteLink RouteName="FrameworkInfo" Text="{value: Name}" Query-Slug="{value: Slug}"/>
+                <dot:RouteLink RouteName="FrameworkInfo"
+                               Text="{value: Name}"
+                               Query-Slug="{value: Slug}"/>
             </ContentTemplate>
         </dot:GridViewTemplateColumn>
     </dot:GridView>

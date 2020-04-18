@@ -4,10 +4,17 @@
     
     <h1>.NET Frameworks</h1>
     
-    <asp:GridView ID="FrameworkGrid" runat="server" SelectMethod="FrameworkGrid_GetData" AutoGenerateColumns="False" CssClass="table table-bordered">
+    <asp:GridView ID="FrameworkGrid" runat="server"
+                  SelectMethod="FrameworkGrid_GetData"
+                  AutoGenerateColumns="False"
+                  CssClass="table table-bordered">
         <Columns>
-            <asp:BoundField DataField="Version" HeaderText="Version" SortExpression="Version"/>
-            <asp:HyperLinkField DataTextField="Name" HeaderText="Name" SortExpression="Name"
+            <asp:BoundField DataField="Version"
+                            HeaderText="Version"
+                            SortExpression="Version"/>
+            <asp:HyperLinkField DataTextField="Name"
+                                HeaderText="Name"
+                                SortExpression="Name"
                                 DataNavigateUrlFields="Slug"
                                 DataNavigateUrlFormatString="~/frameworkinfo?Slug={0}"/>
         </Columns>
